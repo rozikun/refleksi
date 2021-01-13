@@ -1,0 +1,98 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* overflow: hidden; */
+}
+
+@font-face{
+    font-family: "tahuFont";
+    src: url("../font/Tahu!.ttf");
+}
+
+.header{
+   height: 100vh;
+   width: 100%;
+}
+
+.header-kiri{
+    font-family: "tahuFont";
+    background-image: url("../image/back\ cover.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -20px;
+    text-align: center;
+}
+
+.header-kiri, button{
+    font-size: 200px;
+}
+
+.tengah{
+    position: relative;
+    top:50%;
+}
+
+.header-kanan{
+    background-image: url("../image/IV.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -10px;
+}
+
+.bukunya{
+   height: 100vh;
+   width: 100%;
+   overflow: scroll;
+}
+
+.sectionbuku{
+    padding: 10px;
+    font-family: 'tahuFont';
+    text-align: center;
+}
+
+.buku{
+    margin: 20px;
+}
+
+
+@media only screen and (max-width: 400px){
+    .header-kanan{
+        visibility: hidden;
+    }
+
+    .header-kiri{
+        font-family: "tahuFont";
+        background-image: url("../image/II.jpg");
+        background-repeat: no-repeat;
+        background-position-x: -280px;
+        background-position-y: -70px;
+        text-align: center;
+    }
+
+    .tengah{
+        position: relative;
+        top:10%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .header-kanan{
+        visibility: hidden;
+    }
+
+    .header-kiri{
+        font-family: "tahuFont";
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: -70px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .tengah{
+        position: relative;
+        top:10%;
+    }
+}

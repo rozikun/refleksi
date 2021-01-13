@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipbook</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/buku.css">
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col-md-6 header-kiri">
+                <a href = "#buku2" class="btn btn-lg btn-outline-light tengah">Mulai Membaca</a>
+            </div>
+        <div class="col-md-6 header-kanan"> </div>
+    </div>
+
+    <div class="container container-fluid">
+    <div class="row" id="bukunya">
+    <div class="col-md-12">
+        <h1 class="sectionbuku center" id="buku2">Book Section</h1>
+    <div id="flipbook" class="buku">
+        <div class="judul shadow"><img src="image/coveer.jpg" ></div> 
+        <div class="isi shadow"><img src="image/I.jpg" ></div>
+        <div class="isi shadow"><img src="image/II.jpg" ></div>
+        <div class="isi shadow"><img src="image/III.jpg" ></div>
+        <div class="isi shadow"><img src="image/IV.jpg" ></div>
+        <div class="isi shadow"><img src="image/1.jpg" ></div>
+        <div class="isi shadow"><img src="image/2.jpg" ></div>
+        <div class="isi shadow"><img src="image/3.jpg" ></div>
+        <div class="isi shadow"><img src="image/4.jpg" ></div>
+        <div class="isi shadow"><img src="image/5.jpg" ></div>
+        <div class="isi shadow"><img src="image/6.jpg" ></div>
+        <div class="isi shadow"><img src="image/7.jpg" ></div>
+        <div class="isi shadow"><img src="image/8.jpg" ></div>
+        <div class="isi shadow"><img src="image/9.jpg" ></div>
+        <div class="isi shadow"><img src="image/10.jpg" ></div>
+        <div class="isi shadow"><img src="image/11.jpg" ></div>
+        <div class="isi shadow"><img src="image/12.jpg" ></div>
+        <div class="isi shadow"><img src="image/13.jpg" ></div>
+        <div class="isi shadow"><img src="image/14.jpg" ></div>
+        <div class="isi shadow"><img src="image/15.jpg" ></div>
+        <div class="isi shadow"><img src="image/16.jpg" ></div>
+        <div class="isi shadow"><img src="image/17.jpg" ></div>
+        <div class="isi shadow"><img src="image/18.jpg" ></div>
+        <div class="isi shadow"><img src="image/19.jpg" ></div>
+        <div class="isi shadow"><img src="image/20.jpg" ></div>
+        <div class="isi shadow"><img src="image/21.jpg" ></div>
+        <div class="isi shadow"><img src="image/22.jpg" ></div>
+        <div class="isi shadow"><img src="image/23.jpg" ></div>
+        <div class="isi shadow"><img src="image/24.jpg" ></div>
+        <div class="isi shadow"><img src="image/25.jpg" ></div>
+        <div class="isi shadow"><img src="image/26.jpg" ></div>
+        <div class="isi shadow"><img src="image/27.jpg" ></div>
+        <div class="isi shadow"><img src="image/28.jpg" ></div>
+        <div class="isi shadow"><img src="image/29.jpg" ></div>
+        <div class="isi shadow"><img src="image/30.jpg" ></div>
+        <div class="isi shadow"><img src="image/31.jpg" ></div>
+        <div class="isi shadow"><img src="image/32.jpg" ></div>
+        <div class="isi shadow"><img src="image/33.jpg" ></div>
+        <div class="isi shadow"><img src="image/34.jpg" ></div>
+        <div class="isi shadow"><img src="image/35.jpg" ></div>
+        <div class="isi shadow"><img src="image/36.jpg" ></div>
+        <div class="isi shadow"><img src="image/37.jpg" ></div>
+        <div class="isi shadow"><img src="image/38.jpg" ></div>
+        <div class="isi shadow"><img src="image/39.jpg" ></div>
+        <div class="isi shadow"><img src="image/40.jpg" ></div>
+        <div class="isi shadow"><img src="image/back cover.jpg"></div>
+     </div>
+
+    </div>
+    </div>
+</div>
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/jquery.min.1.7.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/turn.min.js"></script>
+    <script>
+        if ($(window).width() > 960 ) {
+            $("#flipbook").turn({
+                width: 1000,
+                height: 710,
+                autoCenter: false
+            });
+        }else{
+            $("#flipbook").turn({
+                width: 600,
+                height: 325,
+                autoCenter: false
+            });
+        }
+    </script>
+</body>
+</html>
